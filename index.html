@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+   <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            
+        }
+        ul li{
+            list-style-type: none;
+        }
+        
+        .carosal {
+            background-color: white;
+            height: 500px;
+            width: 100%;
+            border: 3px solid red;
+        }
+        
+        .logo {
+            margin-left: 5%0;
+            font-size: 30px;
+            line-height: 60px;
+            color:white;
+            position: absolute;
+            left:63px;
+        }
+        
+        h1 {
+            color: red;
+            
+        }
+        .k{
+            color:white;
+           border: white;
+        }
+        .k1{
+            color:white;
+           border: white;
+        }
+
+        .k1:hover{
+            color: black;
+            background-color: #fff4c0;
+            transition: .6s;
+            border-radius: 10px;
+        }
+        .k:hover{
+            color: black;
+            background-color: #fff4c0;
+            transition: .6s;
+            border-radius: 10px;
+        }
+
+        .logo::first-letter {
+            font-size: larger;
+            color: red;
+        }
+        
+        
+        
+      
+      
+        
+
+        
+        
+        .box1{
+          
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; 
+            height: 600px;
+            display: flex;
+            border-radius: 20px;
+            
+            background-color: #2196f3;
+            /* border: 3px solid red; */
+        }
+       
+        
+        .box2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; 
+            height: 600px;
+            display: flex;
+            border-radius: 20px;
+            
+            background-color: #2196f3;
+            background-color: #62cd47;
+           
+
+        }
+        
+
+        .box3{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; 
+            height: 600px;
+            display: flex;
+            border-radius: 20px;
+            background-color: #2196f3;
+            background-color: #7a4cd6;
+            /* border: 3px solid red; */
+        }
+        
+
+        .products {
+            margin-top: 200px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+           background-color: rgb(166, 168, 154);
+            height: 800px;
+            width: 100vw;
+            gap: 40px;
+        }
+       
+        .abtdata{
+            margin-top: 0px;
+            font-size: larger;
+            text-align: center;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+       
+        
+        .image img {
+            
+            height: 400px;
+            width: 25vw;
+        }
+
+       
+        
+       
+
+        
+       
+        .data a{
+            color:white;
+        }
+ 
+        .data a:hover{
+            text-decoration: none;
+            color:white;
+        }
+        .abtbox
+        {
+            display: flex;
+            margin-top:100px;
+            background-color: black;
+            color:white;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 500px;
+           position: relative;
+            
+        }
+        
+        .payments {
+            margin-top: 300px;
+            height: 600px;
+            display: flex;
+            width: 100vw;
+            justify-content: center;
+            background-color: aqua;
+        }
+        
+        .paymentimg {
+            width: 50vw;
+            
+        }
+
+       
+        
+        input {
+            height:40px;
+            width: 50%;
+        }
+        
+        .footer {
+            margin-top: 300px;
+            height: 350px;
+            width: 100vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: black;
+        }
+        
+        footer ul {
+            display: flex;
+            align-items: center;
+            height: 100px;
+            justify-content: center;
+            gap: 100px;
+        }
+        
+        footer ul li a {
+            font-size: 40px;
+            gap: 30px;
+            background-color: white;
+            border-radius: 30px;
+            color: black;
+        }
+        
+        .footdata {
+            display: flex;
+            height: 30px;
+            justify-content: center;
+            gap: 30px;
+           
+        }
+        
+        .footdata li a {
+            font-size: 20px;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+        }
+        
+        .footdata li a:hover {
+            font-size: 20px;
+            color: black;
+            background-color: white;
+            text-decoration: none;
+        }
+        
+        footer ul li a:hover {
+            color: white;
+            transition: 0.7s;
+            background-color: black;
+        }
+        
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        
+        h2 {
+            text-align: center;
+            margin-top: 17px;
+            
+        }
+        .carimg img{
+            height: 100%;
+            width: 100%;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        /* Media query for smaller screens */
+       
+        .inputbox{
+          
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50vw;
+            gap: 30px;
+            height: 100%;
+            background-color: black;
+            
+        }
+        * {
+      padding: 0;
+      margin: 0;
+      text-decoration: none;
+      list-style: none;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: montserrat;
+    }
+    nav {
+      background: black;
+      height: 80px;
+      width: 100%;
+    }
+    label.logo {
+      color: white;
+      font-size: 35px;
+      line-height: 80px;
+      padding: 0 100px;
+      font-weight: bold;
+    }
+    nav ul {
+      float: right;
+      margin-right: 20px;
+    }
+    nav ul li {
+      display: inline-block;
+      line-height: 80px;
+      margin: 0 5px;
+    }
+    nav ul li a {
+      color: white;
+      font-size: 17px;
+      padding: 7px 13px;
+      border-radius: 3px;
+      text-transform: uppercase;
+    }
+    a.active, a:hover {
+      background:rgb(250, 3, 3);
+      transition: .5s;
+    }
+    #check {
+      display: none;
+    }
+
+
+nav ul li a{
+    text-decoration: none;
+}
+
+
+    
+    @media (max-width: 800px) {
+        .abtbox
+        {
+            height: 650px;
+           position: relative;
+            
+        }
+        .payments{
+            height:100px ;
+        }
+        .inputbox{
+            height: 500px;
+            width: 70vw;
+        }
+        .abtdata{
+            margin-top: 20px;
+          
+        }
+        .data a:hover{
+            text-decoration: none;
+            color:red;
+        }
+       
+        .trend{
+            margin-top:600px;
+        }
+        
+        .k1{
+            display: none;
+        }
+        .footdata{
+            display: none;
+        }
+        footer ul{
+            align-items: center;
+            justify-content: center;
+        }
+
+
+       
+        .icons{
+            background-color: black;
+        }
+      label.logo {
+        font-size: 30px; 
+      }
+      nav ul li a {
+        font-size: 16px;
+      }
+      ul {
+       margin-top: 90px;
+        width: 100%;
+        height: 350px;
+        background: black;
+        top: 10px;
+        position: relative;
+        left: 0; 
+        text-align: center;
+        justify-content: center;
+        transition: all .5s;
+        margin-bottom: 100px;
+      }
+      nav ul li {
+        display: block;
+        margin: 20px 0; /* Adjusted margin for better spacing */
+        line-height: 30px;
+      }
+      nav ul li a {
+        font-size: 20px;
+        text-decoration: none;
+        color:white;
+      }
+      a:hover, a.active {
+        background: none;
+        color: red;
+      }
+
+
+      section {
+      background: url(bg1.jpg) no-repeat;
+      background-size: cover;
+      height: calc(100vh - 80px);
+    }
+    .inputbox{
+        width: 70vw;
+    }
+    .products{
+        height: 1000px;
+        width: 100vw;
+        padding: 20px;
+        flex-direction: column;
+    }
+
+    
+    
+    .image img{
+        height: 200px;
+       width: 60vw;
+       margin-top: 40px;
+    }
+    .box1 {
+        height: 300px;
+        width: 60vw;
+        flex-direction: column;
+    }
+    .box2  .box3{
+        height: 300px;
+        width: 60vw;
+        flex-direction: column;
+    }
+    .payments{
+            margin-top: 300px;
+            height: 600px;
+            display: flex;
+            width: 100vw;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #ffd100;
+        }
+        
+        .paymentimg {
+           display: none;
+        }
+    
+
+    }
+    .uldata{
+        width: 100vw;
+        background-color: black;
+    }
+    .trend{
+       background-color:  black; 
+       color: white;
+       height:40px;
+    }
+    
+   
+        
+    </style>    
+</head>
+<body>
+    <nav>
+        <input type="checkbox" id="check">
+        <label class="logo">Gucci Store</label>
+        <div class="ul data">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#About">ABOUT</a></li>
+                <li><a href="#Payments">PAYMENTS</a></li>
+                <li><a href="#Products">PRODUCTS</a></li>
+                <li><a href="#Contactus">CONTACT US</a></li>
+                <li><a href="#social">Social Links</a></li>
+              </ul>
+        </div>
+      </nav>
+    
+
+    <div class="container" id="home">
+        <h2 class="trend"> TRENDING PURCHAGES</h2><br>  
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+          
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+          </ol>
+      
+         
+          <div class="carousel-inner  carimg">
+            <div class="item active">
+              <img src="i1.jpg" alt="Los Angeles" style="width:100%;">
+            </div>
+      
+            <div class="item">
+              <img src="i2.jpg" alt="Chicago" style="width:100%;">
+            </div>
+          
+            <div class="item">
+              <img src="i3.jpg" alt="New york" style="width:100%;">
+            </div>
+          </div>
+      
+        
+         
+        </div>
+      </div>
+      
+
+    
+    <section  style=" position: relative;" class="products" id="Products">
+        <h1 class="k" style=" position: absolute ;  top:10px; ">Products</h1>
+        <div class="box1">
+
+            
+                <div class="image ">
+                    <img src="i3.jpg" alt="">
+                </div>
+                <div class="data">
+                    
+                    <a href="#"><h2>Gadgets</h2></a>
+               
+            </div>
+    
+        </div>
+        <div class="box2">
+            
+                <div class="image">
+                    <img src="i4.jpg" alt="">
+                </div>
+                <div class="data">
+                    <a href="#"><h2>Footwear</h2></a>
+               
+            </div>
+        </div>
+
+        <div class="box3">
+            
+                <div class="image">
+                    <img src="i5.jpg" alt="">
+                </div>
+                <div class="data">
+                    <a href="#"><h2>Fashion</h2></a>
+                    
+               
+            </div>
+        </div>
+    </section>
+
+    <section class="payments" id="Payments">
+        
+        <div class="paymentimg" >
+            <img src="i7.jpg" >
+        </div>
+        <div class="inputbox">
+             
+            
+                <h1 class="k">PAYMENTS INFO</h1> 
+            <input type="text" placeholder="Name">
+            <input type="text" placeholder="CNN">
+            <input type="email" placeholder="Email">
+            <input type="phone" placeholder="Phone">
+            <input style="background-color: green; color:white;"type="button" value="Save Info">
+           
+        </div>
+    </section>
+
+
+    <section >
+        <div class="abtbox" id="About">
+            <h1 class="k" style="  position: absolute;
+            top:0px;"> ABOUT US</h1>
+                <div class="abtdata">
+            <p>Welcome to Gucci Store, where luxury meets exclusivity. At Gucci Store, we pride ourselves on offering only the finest and most exclusive products to our esteemed clientele.</p>
+            <p>Founded on the principles of quality, craftsmanship, and scarcity, Gucci Store sets itself apart by offering limited quantities of meticulously crafted goods. Our commitment to rarity ensures that each piece in our collection is unique and highly coveted.</p>
+            <p>Just like the renowned fashion house Gucci, we uphold the value of our products by maintaining their exclusivity. We do not believe in discounts; instead, we choose to preserve the prestige of our brand by offering a select range of products each year.</p>
+            <p>What sets us apart is our approach to surplus stock. Rather than discounting our products, we choose to uphold our brand integrity by carefully managing our inventory. Any remaining stock is responsibly disposed of, ensuring that our brand retains its allure and exclusivity.</p>
+            <p>Join us in our journey of sophistication and exclusivity. Experience Gucci Store—where luxury meets scarcity.</p>
+                </div>
+        </div>
+    </section>
+
+    <section class="payments" id="Contactus">
+       
+        <div class="paymentimg">
+            <img src="i8.png" >
+        </div>
+        <div class="inputbox">
+           
+          
+                <h1 class="k"> CONTACT US</h1>
+
+                <input type="phone" placeholder="Enter Name">
+                
+                <input type="email" placeholder="Email">
+                
+                <input type="phone" placeholder="Phone">
+    
+                <input style=" color:white; text-align: center; background-color: green; "type="button " value="Call me">
+          
+            
+        </div>
+    </section>
+
+
+    
+
+
+    
+
+
+    <footer class="footer" >
+        <div class="text" id="social"><h1 class="k">Social Links</h1></div>
+        <div class="icons">
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </div>
+        <div class="footdata">
+            <ul>
+                <li
+                ><a href="#facebook">Facebook</a></li>
+                <li><a href="#About">Instagram</a></li>
+                <li><a href="#Payments">Twitter</a></li>
+                <li><a href="#Products">Youtube</a></li>
+               
+            </ul>
+    
+        </div>
+    </footer>
+</body>
+</html>
